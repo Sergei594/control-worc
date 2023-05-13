@@ -25,3 +25,4 @@ string [] screening(string [] stringArray)
     n++;
   }
  }
+ string [] rez = new string [n];
