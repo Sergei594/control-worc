@@ -24,15 +24,29 @@ string [] screening(string [] stringArray)
     if(stringArray[i].Length <=3)
     n++;
   }
- }
+ 
  string [] rez = new string [n];
   int j = 0;
   for (int i = 0;i<stringArray.Length;i++)
+  
   {
     if(stringArray[i].Length <=3)
     {
         rez[j] = stringArray[i];
         j++;
     }
+      
   }
   return rez;
+ }
+void printArr(string [] stringArray)
+{
+    Console.Write("[");
+    for (int i = 0;i<stringArray.Length;i++)
+    {
+    Console.Write($"{stringArray[i]} ");
+    }
+    Console.Write("]");
+}
+array(stringArray);
+printArr(screening(stringArray));
